@@ -1,0 +1,8 @@
+DELIMITER ##
+CREATE PROCEDURE retrieveUsers()
+BEGIN
+	SELECT DISTINCT * FROM Subscribers;
+END ##
+DELIMITER ;
+
+CALL retrieveUsers();
